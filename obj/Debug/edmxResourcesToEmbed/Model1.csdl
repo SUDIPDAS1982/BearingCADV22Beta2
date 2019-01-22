@@ -1,0 +1,1232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BearingDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BearingDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="BearingDBModel.sysdiagrams" />
+    <EntitySet Name="tblCustomer" EntityType="BearingDBModel.tblCustomer" />
+    <EntitySet Name="tblData_Lube" EntityType="BearingDBModel.tblData_Lube" />
+    <EntitySet Name="tblData_Mat" EntityType="BearingDBModel.tblData_Mat" />
+    <EntitySet Name="tblDesign_DrainHole" EntityType="BearingDBModel.tblDesign_DrainHole" />
+    <EntitySet Name="tblDesign_Lining" EntityType="BearingDBModel.tblDesign_Lining" />
+    <EntitySet Name="tblDesign_Pad" EntityType="BearingDBModel.tblDesign_Pad" />
+    <EntitySet Name="tblDesign_Pad_Fillet" EntityType="BearingDBModel.tblDesign_Pad_Fillet" />
+    <EntitySet Name="tblDesign_Tol" EntityType="BearingDBModel.tblDesign_Tol" />
+    <EntitySet Name="tblLine" EntityType="BearingDBModel.tblLine" />
+    <EntitySet Name="tblManf_Drill" EntityType="BearingDBModel.tblManf_Drill" />
+    <EntitySet Name="tblManf_EDM" EntityType="BearingDBModel.tblManf_EDM" />
+    <EntitySet Name="tblManf_Fixture_Bearing_Splitting" EntityType="BearingDBModel.tblManf_Fixture_Bearing_Splitting" />
+    <EntitySet Name="tblManf_Fixture_SplitAndTurn" EntityType="BearingDBModel.tblManf_Fixture_SplitAndTurn" />
+    <EntitySet Name="tblManf_Pin" EntityType="BearingDBModel.tblManf_Pin" />
+    <EntitySet Name="tblManf_Pin_D" EntityType="BearingDBModel.tblManf_Pin_D" />
+    <EntitySet Name="tblManf_Screw" EntityType="BearingDBModel.tblManf_Screw" />
+    <EntitySet Name="tblManf_Screw_D" EntityType="BearingDBModel.tblManf_Screw_D" />
+    <EntitySet Name="tblManf_Screw_Head" EntityType="BearingDBModel.tblManf_Screw_Head" />
+    <EntitySet Name="tblPN" EntityType="BearingDBModel.tblPN" />
+    <EntitySet Name="tblProject" EntityType="BearingDBModel.tblProject" />
+    <EntitySet Name="tblProject_Bearing_Radial" EntityType="BearingDBModel.tblProject_Bearing_Radial" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_AntiRotPin" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_AntiRotPin" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_EDM_Pad" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_EDM_Pad" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_Flange" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_Flange" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_FlexurePivot" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_FlexurePivot" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_MillRelief" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_MillRelief" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_Mount" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_Mount" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_Mount_Details" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_Mount_Details" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_OilInlet" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_OilInlet" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_Pad" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_Pad" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_PerformData" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_PerformData" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_SL" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_SL" />
+    <EntitySet Name="tblProject_Bearing_Radial_FP_TempSensor" EntityType="BearingDBModel.tblProject_Bearing_Radial_FP_TempSensor" />
+    <EntitySet Name="tblProject_Details" EntityType="BearingDBModel.tblProject_Details" />
+    <EntitySet Name="tblProject_EndConfig_MountHoles" EntityType="BearingDBModel.tblProject_EndConfig_MountHoles" />
+    <EntitySet Name="tblProject_EndConfig_Seal" EntityType="BearingDBModel.tblProject_EndConfig_Seal" />
+    <EntitySet Name="tblProject_EndConfig_Seal_Blade" EntityType="BearingDBModel.tblProject_EndConfig_Seal_Blade" />
+    <EntitySet Name="tblProject_EndConfig_Seal_DrainHoles" EntityType="BearingDBModel.tblProject_EndConfig_Seal_DrainHoles" />
+    <EntitySet Name="tblProject_EndConfig_Seal_WireClipHoles" EntityType="BearingDBModel.tblProject_EndConfig_Seal_WireClipHoles" />
+    <EntitySet Name="tblProject_EndConfig_TB" EntityType="BearingDBModel.tblProject_EndConfig_TB" />
+    <EntitySet Name="tblProject_EndConfig_TB_FeedGroove" EntityType="BearingDBModel.tblProject_EndConfig_TB_FeedGroove" />
+    <EntitySet Name="tblProject_EndConfig_TB_PerformData" EntityType="BearingDBModel.tblProject_EndConfig_TB_PerformData" />
+    <EntitySet Name="tblProject_EndConfig_TB_WeepSlot" EntityType="BearingDBModel.tblProject_EndConfig_TB_WeepSlot" />
+    <EntitySet Name="tblProject_EndConfigs" EntityType="BearingDBModel.tblProject_EndConfigs" />
+    <EntitySet Name="tblProject_OpCond" EntityType="BearingDBModel.tblProject_OpCond" />
+    <EntitySet Name="tblProject_Product" EntityType="BearingDBModel.tblProject_Product" />
+    <EntitySet Name="tblProject_Product_Accessories" EntityType="BearingDBModel.tblProject_Product_Accessories" />
+    <EntitySet Name="tblRev" EntityType="BearingDBModel.tblRev" />
+    <EntitySet Name="tblSalesOrder" EntityType="BearingDBModel.tblSalesOrder" />
+    <EntitySet Name="tblUser" EntityType="BearingDBModel.tblUser" />
+    <AssociationSet Name="FK_tblSalesOrder_tblCustomer" Association="BearingDBModel.FK_tblSalesOrder_tblCustomer">
+      <End Role="tblCustomer" EntitySet="tblCustomer" />
+      <End Role="tblSalesOrder" EntitySet="tblSalesOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLine_tblSalesOrder" Association="BearingDBModel.FK_tblLine_tblSalesOrder">
+      <End Role="tblSalesOrder" EntitySet="tblSalesOrder" />
+      <End Role="tblLine" EntitySet="tblLine" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_tblLine" Association="BearingDBModel.FK_tblProject_tblLine">
+      <End Role="tblLine" EntitySet="tblLine" />
+      <End Role="tblProject" EntitySet="tblProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_AntiRotPin_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_AntiRotPin_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_AntiRotPin" EntitySet="tblProject_Bearing_Radial_FP_AntiRotPin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_Flange_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Flange_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_Flange" EntitySet="tblProject_Bearing_Radial_FP_Flange" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_FlexurePivot_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_FlexurePivot_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_FlexurePivot" EntitySet="tblProject_Bearing_Radial_FP_FlexurePivot" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_MillRelief_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_MillRelief_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_MillRelief" EntitySet="tblProject_Bearing_Radial_FP_MillRelief" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_Mount_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Mount_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_Mount" EntitySet="tblProject_Bearing_Radial_FP_Mount" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_OilInlet_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_OilInlet_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_OilInlet" EntitySet="tblProject_Bearing_Radial_FP_OilInlet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_Pad_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Pad_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_Pad" EntitySet="tblProject_Bearing_Radial_FP_Pad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_PerformData_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_PerformData_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_PerformData" EntitySet="tblProject_Bearing_Radial_FP_PerformData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_SL_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_SL_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP_SL" EntitySet="tblProject_Bearing_Radial_FP_SL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_tblPN" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_Bearing_Radial_FP" EntitySet="tblProject_Bearing_Radial_FP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfigs_tblPN" Association="BearingDBModel.FK_tblProject_EndConfigs_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_EndConfigs" EntitySet="tblProject_EndConfigs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_OpCond_tblPN" Association="BearingDBModel.FK_tblProject_OpCond_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblProject_OpCond" EntitySet="tblProject_OpCond" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblRev_tblPN" Association="BearingDBModel.FK_tblRev_tblPN">
+      <End Role="tblPN" EntitySet="tblPN" />
+      <End Role="tblRev" EntitySet="tblRev" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_tblRev" Association="BearingDBModel.FK_tblProject_tblRev">
+      <End Role="tblRev" EntitySet="tblRev" />
+      <End Role="tblProject" EntitySet="tblProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_Bearing_Radial_FP_Mount_Details_tblProject_Bearing_Radial_FP_Mount" Association="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Mount_Details_tblProject_Bearing_Radial_FP_Mount">
+      <End Role="tblProject_Bearing_Radial_FP_Mount" EntitySet="tblProject_Bearing_Radial_FP_Mount" />
+      <End Role="tblProject_Bearing_Radial_FP_Mount_Details" EntitySet="tblProject_Bearing_Radial_FP_Mount_Details" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfig_MountHoles_tblProject_EndConfigs" Association="BearingDBModel.FK_tblProject_EndConfig_MountHoles_tblProject_EndConfigs">
+      <End Role="tblProject_EndConfigs" EntitySet="tblProject_EndConfigs" />
+      <End Role="tblProject_EndConfig_MountHoles" EntitySet="tblProject_EndConfig_MountHoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfig_Seal_Blade_tblProject_EndConfig_Seal" Association="BearingDBModel.FK_tblProject_EndConfig_Seal_Blade_tblProject_EndConfig_Seal">
+      <End Role="tblProject_EndConfig_Seal" EntitySet="tblProject_EndConfig_Seal" />
+      <End Role="tblProject_EndConfig_Seal_Blade" EntitySet="tblProject_EndConfig_Seal_Blade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfig_Seal_DrainHoles_tblProject_EndConfig_Seal" Association="BearingDBModel.FK_tblProject_EndConfig_Seal_DrainHoles_tblProject_EndConfig_Seal">
+      <End Role="tblProject_EndConfig_Seal" EntitySet="tblProject_EndConfig_Seal" />
+      <End Role="tblProject_EndConfig_Seal_DrainHoles" EntitySet="tblProject_EndConfig_Seal_DrainHoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfig_Seal_tblProject_EndConfigs" Association="BearingDBModel.FK_tblProject_EndConfig_Seal_tblProject_EndConfigs">
+      <End Role="tblProject_EndConfigs" EntitySet="tblProject_EndConfigs" />
+      <End Role="tblProject_EndConfig_Seal" EntitySet="tblProject_EndConfig_Seal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfig_TB_FeedGroove_tblProject_EndConfig_TB" Association="BearingDBModel.FK_tblProject_EndConfig_TB_FeedGroove_tblProject_EndConfig_TB">
+      <End Role="tblProject_EndConfig_TB" EntitySet="tblProject_EndConfig_TB" />
+      <End Role="tblProject_EndConfig_TB_FeedGroove" EntitySet="tblProject_EndConfig_TB_FeedGroove" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblProject_EndConfig_TB_tblProject_EndConfigs" Association="BearingDBModel.FK_tblProject_EndConfig_TB_tblProject_EndConfigs">
+      <End Role="tblProject_EndConfigs" EntitySet="tblProject_EndConfigs" />
+      <End Role="tblProject_EndConfig_TB" EntitySet="tblProject_EndConfig_TB" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblCustomer">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="fldName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="fldOrderNo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="fldMachineName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblSalesOrder" Relationship="BearingDBModel.FK_tblSalesOrder_tblCustomer" FromRole="tblCustomer" ToRole="tblSalesOrder" />
+  </EntityType>
+  <EntityType Name="tblData_Lube">
+    <Key>
+      <PropertyRef Name="fldType" />
+    </Key>
+    <Property Name="fldType" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldAPI_sg" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTemp_a" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldCSt_a" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTemp_b" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldCSt_b" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblData_Mat">
+    <Key>
+      <PropertyRef Name="fldCode_Waukesha" />
+    </Key>
+    <Property Name="fldCode_Waukesha" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="fldLining" Type="Boolean" />
+    <Property Name="fldBearing" Type="Boolean" />
+    <Property Name="fldEndPlate" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblDesign_DrainHole">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldDShaft" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDrainHoleQty" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblDesign_Lining">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldDSet_LLim" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDSet_ULim" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldT" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblDesign_Pad">
+    <Key>
+      <PropertyRef Name="fldQty" />
+    </Key>
+    <Property Name="fldQty" Type="Int32" Nullable="false" />
+    <Property Name="fldAngle" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblDesign_Pad_Fillet">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldDSet_LLim" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDSet_ULim" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldR" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblDesign_Tol">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldDSet_LLim" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDSet_ULim" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTol_Assy_EndConfig_DBore" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTol_Detail_EndConfig_DBore" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTol_Detail_DSet" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblLine">
+    <Key>
+      <PropertyRef Name="fldSONo" />
+      <PropertyRef Name="fldNo" />
+    </Key>
+    <Property Name="fldSONo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldNo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="fldRelatedSOLNo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblSalesOrder" Relationship="BearingDBModel.FK_tblLine_tblSalesOrder" FromRole="tblLine" ToRole="tblSalesOrder" />
+    <NavigationProperty Name="tblProject" Relationship="BearingDBModel.FK_tblProject_tblLine" FromRole="tblLine" ToRole="tblProject" />
+  </EntityType>
+  <EntityType Name="tblManf_Drill">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldD" Type="Decimal" Nullable="false" Precision="18" Scale="9" />
+    <Property Name="fldCons_Orifice_CB" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="fldCons_MillRelief" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="fldCons_DrainHole" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblManf_EDM">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldWireGauge" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldGap" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblManf_Fixture_Bearing_Splitting">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldB_Hdist_Nom" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldB_Hdist_Tol" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldSplitLineDist_Nom" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldSplitLineDist_Tol" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblManf_Fixture_SplitAndTurn">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldPartNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldPartNo_Comp" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldDescrip" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDFinish" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLoc" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDBC" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDia_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCountHoles" Type="Int32" />
+    <Property Name="fldEqui_Spaced" Type="Boolean" />
+    <Property Name="fldAng_Start" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Start_Comp" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other1" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other2" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other3" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other4" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other5" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other6" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAng_Other7" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblManf_Pin">
+    <Key>
+      <PropertyRef Name="fldRowNo" />
+    </Key>
+    <Property Name="fldRowNo" Type="Int32" Nullable="false" />
+    <Property Name="fldPartNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldUnit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDesig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldDescrip" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldL" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldMat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblManf_Pin_D">
+    <Key>
+      <PropertyRef Name="fldRowNo" />
+    </Key>
+    <Property Name="fldRowNo" Type="Int32" Nullable="false" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblManf_Screw">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldRowNo" Type="Int32" />
+    <Property Name="fldPartNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldUnit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDesig" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldDescrip" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldPitch" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPitchType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldL" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldMat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldHead_H" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblManf_Screw_D">
+    <Key>
+      <PropertyRef Name="fldRowNo" />
+    </Key>
+    <Property Name="fldRowNo" Type="Int32" Nullable="false" />
+    <Property Name="fldUnit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldD_TapDrill" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldD_Thru" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldD_CBore" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblManf_Screw_Head">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldUnit" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldHead_H" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHead_D" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblPN">
+    <Key>
+      <PropertyRef Name="fldNo" />
+    </Key>
+    <Property Name="fldNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldBearing_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDesign" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldUnit" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_AntiRotPin" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_AntiRotPin_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_AntiRotPin" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_Flange" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Flange_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_Flange" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_FlexurePivot" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_FlexurePivot_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_FlexurePivot" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_MillRelief" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_MillRelief_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_MillRelief" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_Mount" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Mount_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_Mount" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_OilInlet" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_OilInlet_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_OilInlet" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_Pad" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Pad_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_Pad" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_PerformData" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_PerformData_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_PerformData" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_SL" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_SL_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP_SL" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_tblPN" FromRole="tblPN" ToRole="tblProject_Bearing_Radial_FP" />
+    <NavigationProperty Name="tblProject_EndConfigs" Relationship="BearingDBModel.FK_tblProject_EndConfigs_tblPN" FromRole="tblPN" ToRole="tblProject_EndConfigs" />
+    <NavigationProperty Name="tblProject_OpCond" Relationship="BearingDBModel.FK_tblProject_OpCond_tblPN" FromRole="tblPN" ToRole="tblProject_OpCond" />
+    <NavigationProperty Name="tblRev" Relationship="BearingDBModel.FK_tblRev_tblPN" FromRole="tblPN" ToRole="tblRev" />
+  </EntityType>
+  <EntityType Name="tblProject">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldRevNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="fldSONo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldLineNo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="fldStatus" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblLine" Relationship="BearingDBModel.FK_tblProject_tblLine" FromRole="tblProject" ToRole="tblLine" />
+    <NavigationProperty Name="tblRev" Relationship="BearingDBModel.FK_tblProject_tblRev" FromRole="tblProject" ToRole="tblRev" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldDesign" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldSplitConfig" Type="Boolean" />
+    <Property Name="fldOD_Range_Min" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOD_Range_Max" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPadBore_Range_Min" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPadBore_Range_Max" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldBore_Range_Min" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldBore_Range_Max" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDShaft_Range_Min" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDShaft_Range_Max" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldL" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDepth_EndConfig_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDepth_EndConfig_Back" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldMat_Base" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldMat_LiningExists" Type="Boolean" />
+    <Property Name="fldMat_Lining" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLiningT" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_tblPN" FromRole="tblProject_Bearing_Radial_FP" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_AntiRotPin">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldLoc_Dist_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLoc_Casing_SL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLoc_Offset" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLoc_Bearing_Vert" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLoc_Bearing_SL" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLoc_Angle" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldSpec_UnitSystem" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldSpec_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldSpec_D_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldSpec_L" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldSpec_Mat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDepth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldStickOut" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_AntiRotPin_tblPN" FromRole="tblProject_Bearing_Radial_FP_AntiRotPin" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_EDM_Pad">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldRFillet_Back" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngStart_Web" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_Flange">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldExists" Type="Boolean" />
+    <Property Name="fldD" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldWid" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDimStart_Front" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Flange_tblPN" FromRole="tblProject_Bearing_Radial_FP_Flange" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_FlexurePivot">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldWeb_T" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldWeb_H" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldWeb_RFillet" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldGapEDM" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_FlexurePivot_tblPN" FromRole="tblProject_Bearing_Radial_FP_FlexurePivot" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_MillRelief">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldExists" Type="Boolean" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldAxialSealGap_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAxialSealGap_Back" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_MillRelief_tblPN" FromRole="tblProject_Bearing_Radial_FP_MillRelief" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_Mount">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldHoles_GoThru" Type="Boolean" />
+    <Property Name="fldHoles_Bolting" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldHoles_Thread_Depth_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHoles_Thread_Depth_Back" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Mount_tblPN" FromRole="tblProject_Bearing_Radial_FP_Mount" ToRole="tblPN" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_Mount_Details" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Mount_Details_tblProject_Bearing_Radial_FP_Mount" FromRole="tblProject_Bearing_Radial_FP_Mount" ToRole="tblProject_Bearing_Radial_FP_Mount_Details" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_Mount_Details">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDBC" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldD_Finish" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesCount" Type="Int32" />
+    <Property Name="fldHolesEquispaced" Type="Boolean" />
+    <Property Name="fldHolesAngStart" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngStart_Comp_Chosen" Type="Boolean" />
+    <Property Name="fldHolesAngOther1" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngOther2" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngOther3" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngOther4" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngOther5" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngOther6" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldHolesAngOther7" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldScrew_Spec_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldScrew_Spec_D_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldScrew_Spec_L" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldScrew_Spec_Mat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tblProject_Bearing_Radial_FP_Mount" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Mount_Details_tblProject_Bearing_Radial_FP_Mount" FromRole="tblProject_Bearing_Radial_FP_Mount_Details" ToRole="tblProject_Bearing_Radial_FP_Mount" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_OilInlet">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldOrifice_Count" Type="Int32" />
+    <Property Name="fldOrifice_D" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldCount_MainOilSupply" Type="Int32" />
+    <Property Name="fldOrifice_StartPos" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldOrifice_DDrill_CBore" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOrifice_Loc_FrontFace" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOrifice_L" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOrifice_AngStart_BDV" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAnnulus_Exists" Type="Boolean" />
+    <Property Name="fldAnnulus_Reqd_Area" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAnnulus_Wid" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAnnulus_D" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAnnulus_H" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAnnulus_Loc_Back" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOrifice_Dist_Holes" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_OilInlet_tblPN" FromRole="tblProject_Bearing_Radial_FP_OilInlet" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_Pad">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCount" Type="Int32" />
+    <Property Name="fldL" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPivot_Offset" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPivot_AngStart" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldT_Lead" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldT_Pivot" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldT_Trail" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_Pad_tblPN" FromRole="tblProject_Bearing_Radial_FP_Pad" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_PerformData">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPower_HP" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTempRise_F" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_PerformData_tblPN" FromRole="tblProject_Bearing_Radial_FP_PerformData" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_SL">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldScrew_Spec_UnitSystem" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldScrew_Spec_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldScrew_Spec_D_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldScrew_Spec_Pitch" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldScrew_Spec_L" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldScrew_Spec_Mat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLScrew_Spec_Loc_Center" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLScrew_Spec_Loc_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldRScrew_Spec_Loc_Center" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldRScrew_Spec_Loc_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldThread_Depth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldCBore_Depth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDowel_Spec_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDowel_Spec_D_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDowel_Spec_L" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDowel_Spec_Mat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLDowel_Spec_Loc_Center" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLDowel_Spec_Loc_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldRDowel_Spec_Loc_Center" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldRDowel_Spec_Loc_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDowel_Depth" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_Bearing_Radial_FP_SL_tblPN" FromRole="tblProject_Bearing_Radial_FP_SL" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Bearing_Radial_FP_TempSensor">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldExists" Type="Boolean" />
+    <Property Name="fldCanLength" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldCount" Type="Int32" />
+    <Property Name="fldLoc" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldD" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDepth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngStart" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblProject_Details">
+    <Key>
+      <PropertyRef Name="fldNo" />
+      <PropertyRef Name="fldNo_Suffix" />
+    </Key>
+    <Property Name="fldNo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldNo_Suffix" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="fldStatus" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCustomer_Name" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldCustomer_MachineDesc" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldCustomer_PartNo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldUnitSystem" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldAssyDwg_No" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldAssyDwg_No_Suffix" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="fldAssyDwg_Ref" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldEngg_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldEngg_Initials" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldEngg_Date" Type="DateTime" />
+    <Property Name="fldDesignedBy_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDesignedBy_Initials" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDesignedBy_Date" Type="DateTime" />
+    <Property Name="fldCheckedBy_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCheckedBy_Initials" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCheckedBy_Date" Type="DateTime" />
+    <Property Name="fldDate_Closing" Type="DateTime" />
+    <Property Name="fldFilePath_Project" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldFilePath_DesignTbls_SWFiles" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldFileModified_CompleteAssy" Type="Boolean" />
+    <Property Name="fldFileModified_Radial_Part" Type="Boolean" />
+    <Property Name="fldFileModified_Radial_BlankAssy" Type="Boolean" />
+    <Property Name="fldFileModified_EndTB_Part" Type="Boolean" />
+    <Property Name="fldFileModified_EndTB_Assy" Type="Boolean" />
+    <Property Name="fldFileModified_EndSeal_Part" Type="Boolean" />
+    <Property Name="fldFileModification_Notes" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_MountHoles">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDepth_CBore" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldThread_Thru" Type="Boolean" />
+    <Property Name="fldDepth_Thread" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblProject_EndConfigs" Relationship="BearingDBModel.FK_tblProject_EndConfig_MountHoles_tblProject_EndConfigs" FromRole="tblProject_EndConfig_MountHoles" ToRole="tblProject_EndConfigs" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_Seal">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldLiningT" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTempSensor_D_ExitHole" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblProject_EndConfig_Seal_Blade" Relationship="BearingDBModel.FK_tblProject_EndConfig_Seal_Blade_tblProject_EndConfig_Seal" FromRole="tblProject_EndConfig_Seal" ToRole="tblProject_EndConfig_Seal_Blade" />
+    <NavigationProperty Name="tblProject_EndConfig_Seal_DrainHoles" Relationship="BearingDBModel.FK_tblProject_EndConfig_Seal_DrainHoles_tblProject_EndConfig_Seal" FromRole="tblProject_EndConfig_Seal" ToRole="tblProject_EndConfig_Seal_DrainHoles" />
+    <NavigationProperty Name="tblProject_EndConfigs" Relationship="BearingDBModel.FK_tblProject_EndConfig_Seal_tblProject_EndConfigs" FromRole="tblProject_EndConfig_Seal" ToRole="tblProject_EndConfigs" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_Seal_Blade">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCount" Type="Int32" />
+    <Property Name="fldT" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngTaper" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblProject_EndConfig_Seal" Relationship="BearingDBModel.FK_tblProject_EndConfig_Seal_Blade_tblProject_EndConfig_Seal" FromRole="tblProject_EndConfig_Seal_Blade" ToRole="tblProject_EndConfig_Seal" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_Seal_DrainHoles">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldAnnulus_Ratio_L_H" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAnnulus_D" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldD_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldCount" Type="Int32" />
+    <Property Name="fldAngStart" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngBet" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngExit" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblProject_EndConfig_Seal" Relationship="BearingDBModel.FK_tblProject_EndConfig_Seal_DrainHoles_tblProject_EndConfig_Seal" FromRole="tblProject_EndConfig_Seal_DrainHoles" ToRole="tblProject_EndConfig_Seal" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_Seal_WireClipHoles">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldExists" Type="Boolean" />
+    <Property Name="fldCount" Type="Int32" />
+    <Property Name="fldDBC" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldUnitSystem" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldThread_Dia_Desig" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldThread_Pitch" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldThread_Depth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngStart" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngOther1" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngOther2" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngOther3" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngOther4" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldAngOther5" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_TB">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDirectionType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldPad_ID" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPad_OD" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLandL" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLiningT_Face" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLiningT_ID" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPad_Count" Type="Int32" />
+    <Property Name="fldTaper_Depth_OD" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTaper_Depth_ID" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTaper_Angle" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldShroud_Ro" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldShroud_Ri" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldBackRelief_Reqd" Type="Boolean" />
+    <Property Name="fldBackRelief_D" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldBackRelief_Depth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldBackRelief_Fillet" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDimStart" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldLFlange" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldFaceOff_Assy" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblProject_EndConfig_TB_FeedGroove" Relationship="BearingDBModel.FK_tblProject_EndConfig_TB_FeedGroove_tblProject_EndConfig_TB" FromRole="tblProject_EndConfig_TB" ToRole="tblProject_EndConfig_TB_FeedGroove" />
+    <NavigationProperty Name="tblProject_EndConfigs" Relationship="BearingDBModel.FK_tblProject_EndConfig_TB_tblProject_EndConfigs" FromRole="tblProject_EndConfig_TB" ToRole="tblProject_EndConfigs" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_TB_FeedGroove">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldWid" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDepth" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDBC" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDist_Chamf" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblProject_EndConfig_TB" Relationship="BearingDBModel.FK_tblProject_EndConfig_TB_FeedGroove_tblProject_EndConfig_TB" FromRole="tblProject_EndConfig_TB_FeedGroove" ToRole="tblProject_EndConfig_TB" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_TB_PerformData">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldPower_HP" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldFlowReqd_gpm" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTempRise_F" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldTFilm_Min" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldUnitLoad" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPadMax_Temp" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldPadMax_Press" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfig_TB_WeepSlot">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldWid" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDepth" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblProject_EndConfigs">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldPosition" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldPosition" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldMat_Base" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldMat_Lining" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldDO" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDBore_Range_Min" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDBore_Range_Max" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldL" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_EndConfigs_tblPN" FromRole="tblProject_EndConfigs" ToRole="tblPN" />
+    <NavigationProperty Name="tblProject_EndConfig_MountHoles" Relationship="BearingDBModel.FK_tblProject_EndConfig_MountHoles_tblProject_EndConfigs" FromRole="tblProject_EndConfigs" ToRole="tblProject_EndConfig_MountHoles" />
+    <NavigationProperty Name="tblProject_EndConfig_Seal" Relationship="BearingDBModel.FK_tblProject_EndConfig_Seal_tblProject_EndConfigs" FromRole="tblProject_EndConfigs" ToRole="tblProject_EndConfig_Seal" />
+    <NavigationProperty Name="tblProject_EndConfig_TB" Relationship="BearingDBModel.FK_tblProject_EndConfig_TB_tblProject_EndConfigs" FromRole="tblProject_EndConfigs" ToRole="tblProject_EndConfig_TB" />
+  </EntityType>
+  <EntityType Name="tblProject_OpCond">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldSpeed" Type="Int32" />
+    <Property Name="fldRot_Directionality" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="fldRadial_Load" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldRadial_LoadAng" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldThrust_Load_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldThrust_Load_Back" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOilSupply_Lube_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldFlowReqd_gpm" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOilSupply_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldOilSupply_Press" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldOilSupply_Temp" Type="Decimal" Precision="18" Scale="9" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblProject_OpCond_tblPN" FromRole="tblProject_OpCond" ToRole="tblPN" />
+  </EntityType>
+  <EntityType Name="tblProject_Product">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldBearing_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldL_Available" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDist_ThrustFace_Front" Type="Decimal" Precision="18" Scale="9" />
+    <Property Name="fldDist_ThrustFace_Back" Type="Decimal" Precision="18" Scale="9" />
+  </EntityType>
+  <EntityType Name="tblProject_Product_Accessories">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldTempSensor_Supplied" Type="Boolean" />
+    <Property Name="fldTempSensor_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldTempSensor_Count" Type="Int32" />
+    <Property Name="fldTempSensor_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="fldWireClip_Supplied" Type="Boolean" />
+    <Property Name="fldWireClip_Count" Type="Int32" />
+    <Property Name="fldWireClip_Size" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblRev">
+    <Key>
+      <PropertyRef Name="fldPartNo" />
+      <PropertyRef Name="fldNo" />
+    </Key>
+    <Property Name="fldPartNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblPN" Relationship="BearingDBModel.FK_tblRev_tblPN" FromRole="tblRev" ToRole="tblPN" />
+    <NavigationProperty Name="tblProject" Relationship="BearingDBModel.FK_tblProject_tblRev" FromRole="tblRev" ToRole="tblProject" />
+  </EntityType>
+  <EntityType Name="tblSalesOrder">
+    <Key>
+      <PropertyRef Name="fldNo" />
+    </Key>
+    <Property Name="fldNo" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="fldCustID" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="fldType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="tblCustomer" Relationship="BearingDBModel.FK_tblSalesOrder_tblCustomer" FromRole="tblSalesOrder" ToRole="tblCustomer" />
+    <NavigationProperty Name="tblLine" Relationship="BearingDBModel.FK_tblLine_tblSalesOrder" FromRole="tblSalesOrder" ToRole="tblLine" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="fldID" />
+    </Key>
+    <Property Name="fldID" Type="Int32" Nullable="false" />
+    <Property Name="fldName" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldPassword" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldInitials" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="fldPrivilege" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_tblSalesOrder_tblCustomer">
+    <End Role="tblCustomer" Type="BearingDBModel.tblCustomer" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblSalesOrder" Type="BearingDBModel.tblSalesOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCustomer">
+        <PropertyRef Name="fldID" />
+      </Principal>
+      <Dependent Role="tblSalesOrder">
+        <PropertyRef Name="fldCustID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLine_tblSalesOrder">
+    <End Role="tblSalesOrder" Type="BearingDBModel.tblSalesOrder" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblLine" Type="BearingDBModel.tblLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSalesOrder">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblLine">
+        <PropertyRef Name="fldSONo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_tblLine">
+    <End Role="tblLine" Type="BearingDBModel.tblLine" Multiplicity="1" />
+    <End Role="tblProject" Type="BearingDBModel.tblProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblLine">
+        <PropertyRef Name="fldNo" />
+        <PropertyRef Name="fldSONo" />
+      </Principal>
+      <Dependent Role="tblProject">
+        <PropertyRef Name="fldLineNo" />
+        <PropertyRef Name="fldSONo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_AntiRotPin_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_AntiRotPin" Type="BearingDBModel.tblProject_Bearing_Radial_FP_AntiRotPin" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_AntiRotPin">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_Flange_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_Flange" Type="BearingDBModel.tblProject_Bearing_Radial_FP_Flange" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_Flange">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_FlexurePivot_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_FlexurePivot" Type="BearingDBModel.tblProject_Bearing_Radial_FP_FlexurePivot" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_FlexurePivot">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_MillRelief_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_MillRelief" Type="BearingDBModel.tblProject_Bearing_Radial_FP_MillRelief" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_MillRelief">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_Mount_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_Mount" Type="BearingDBModel.tblProject_Bearing_Radial_FP_Mount" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_Mount">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_OilInlet_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_OilInlet" Type="BearingDBModel.tblProject_Bearing_Radial_FP_OilInlet" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_OilInlet">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_Pad_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_Pad" Type="BearingDBModel.tblProject_Bearing_Radial_FP_Pad" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_Pad">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_PerformData_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1" />
+    <End Role="tblProject_Bearing_Radial_FP_PerformData" Type="BearingDBModel.tblProject_Bearing_Radial_FP_PerformData" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_PerformData">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_SL_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_SL" Type="BearingDBModel.tblProject_Bearing_Radial_FP_SL" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_SL">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP" Type="BearingDBModel.tblProject_Bearing_Radial_FP" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfigs_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfigs" Type="BearingDBModel.tblProject_EndConfigs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfigs">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_OpCond_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_OpCond" Type="BearingDBModel.tblProject_OpCond" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject_OpCond">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblRev_tblPN">
+    <End Role="tblPN" Type="BearingDBModel.tblPN" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblRev" Type="BearingDBModel.tblRev" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPN">
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblRev">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_tblRev">
+    <End Role="tblRev" Type="BearingDBModel.tblRev" Multiplicity="1" />
+    <End Role="tblProject" Type="BearingDBModel.tblProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRev">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldNo" />
+      </Principal>
+      <Dependent Role="tblProject">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldRevNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_Bearing_Radial_FP_Mount_Details_tblProject_Bearing_Radial_FP_Mount">
+    <End Role="tblProject_Bearing_Radial_FP_Mount" Type="BearingDBModel.tblProject_Bearing_Radial_FP_Mount" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_Bearing_Radial_FP_Mount_Details" Type="BearingDBModel.tblProject_Bearing_Radial_FP_Mount_Details" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_Bearing_Radial_FP_Mount">
+        <PropertyRef Name="fldPartNo" />
+      </Principal>
+      <Dependent Role="tblProject_Bearing_Radial_FP_Mount_Details">
+        <PropertyRef Name="fldPartNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfig_MountHoles_tblProject_EndConfigs">
+    <End Role="tblProject_EndConfigs" Type="BearingDBModel.tblProject_EndConfigs" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfig_MountHoles" Type="BearingDBModel.tblProject_EndConfig_MountHoles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_EndConfigs">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfig_MountHoles">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfig_Seal_Blade_tblProject_EndConfig_Seal">
+    <End Role="tblProject_EndConfig_Seal" Type="BearingDBModel.tblProject_EndConfig_Seal" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfig_Seal_Blade" Type="BearingDBModel.tblProject_EndConfig_Seal_Blade" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_EndConfig_Seal">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfig_Seal_Blade">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfig_Seal_DrainHoles_tblProject_EndConfig_Seal">
+    <End Role="tblProject_EndConfig_Seal" Type="BearingDBModel.tblProject_EndConfig_Seal" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfig_Seal_DrainHoles" Type="BearingDBModel.tblProject_EndConfig_Seal_DrainHoles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_EndConfig_Seal">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfig_Seal_DrainHoles">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfig_Seal_tblProject_EndConfigs">
+    <End Role="tblProject_EndConfigs" Type="BearingDBModel.tblProject_EndConfigs" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfig_Seal" Type="BearingDBModel.tblProject_EndConfig_Seal" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_EndConfigs">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfig_Seal">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfig_TB_FeedGroove_tblProject_EndConfig_TB">
+    <End Role="tblProject_EndConfig_TB" Type="BearingDBModel.tblProject_EndConfig_TB" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfig_TB_FeedGroove" Type="BearingDBModel.tblProject_EndConfig_TB_FeedGroove" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_EndConfig_TB">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfig_TB_FeedGroove">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblProject_EndConfig_TB_tblProject_EndConfigs">
+    <End Role="tblProject_EndConfigs" Type="BearingDBModel.tblProject_EndConfigs" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblProject_EndConfig_TB" Type="BearingDBModel.tblProject_EndConfig_TB" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="tblProject_EndConfigs">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Principal>
+      <Dependent Role="tblProject_EndConfig_TB">
+        <PropertyRef Name="fldPartNo" />
+        <PropertyRef Name="fldPosition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
